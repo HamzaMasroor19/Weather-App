@@ -140,4 +140,162 @@ body {
   text-shadow: 0 0 20px rgba(255, 206, 84, 0.5);
   animation: float 3s ease-in-out infinite;
 }
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.temp {
+  font-size: 60px;
+  font-weight: 600;
+  margin: 10px 0;
+  background: linear-gradient(135deg, #00c6fb, #005bea);
+  
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 5px 15px rgba(0, 198, 251, 0.3);
+}
+
+.city {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-top: 30px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.col i {
+  font-size: 35px;
+  margin-right: 15px;
+  color: #4fc1e9;
+}
+
+.humidity, .wind {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: -6px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.col p:last-child {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.additional-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.info-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-card i {
+  font-size: 24px;
+  color: #a0d9ef;
+  margin-bottom: 10px;
+}
+
+.info-card p:first-of-type {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 5px;
+}
+
+.info-card p:last-of-type {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 252, 252, 0.769);
+}
+
+
+
+@media (max-width: 500px) {
+  .card {
+    padding: 20px;
+  }
+  
+  .search input {
+    padding: 12px 20px;
+    height: 50px;
+    font-size: 14px;
+  }
+  
+  .search button {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .temp {
+    font-size: 50px;
+  }
+  
+  .city {
+    font-size: 28px;
+  }
+  
+  .details {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .col {
+    width: 100%;
+  }
+  
+  .additional-info {
+    flex-direction: column;
+  }
+}
+
 
